@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shidiqarifs.hitungsegitiga.MainActivity">
+
+    <TextView
+        android:id="@+id/textalas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alas" />
+
+    <EditText
+        android:id="@+id/inputalas"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textalas"
+        android:inputType="number|numberDecimal"/>
+
+    <TextView
+        android:id="@+id/texttinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tinggi"
+        android:layout_below="@+id/inputalas" />
+
+    <EditText
+        android:id="@+id/inputtinggi"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttinggi"
+        android:inputType="number|numberDecimal"/>
+
+    <TextView
+        android:id="@+id/pilih"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/inputtinggi"
+        android:text="@string/pilih"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pilih"
+        android:id="@+id/radioGroup3">
+
+        <RadioButton
+            android:id="@+id/rb_luas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadionButtonCheck"
+            android:text="@string/luas" />
+        <RadioButton
+            android:id="@+id/rb_kll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadionButtonCheck"
+            android:text="@string/kll" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="199dp"
+        android:layout_below="@+id/radioGroup3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp" />
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="@string/hasil"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/inputtinggi"
+        android:layout_alignRight="@+id/reset"
+        android:layout_alignEnd="@+id/reset" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hitung Segitiga</string>
+    <string name="alas">Masukan Alas Segitiga </string>
+    <string name="tinggi">Masukan Tinggi Segitiga </string>
+    <string name="luas">Luas </string>
+    <string name="kll">Keliling </string>
+    <string name="pilih">Pilih Hitung </string>
+    <string name="hitung">Hitung </string>
+    <string name="reset">Reset </string>
+    <string name="hasil">Hasil </string>
+</resources>
